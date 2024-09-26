@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='download.jpg') }}">
+
+  <title>Air Canvas: Draw in the Air with Your Finger</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{{ url_for('static', filename='download.jpg') }}" alt="Air Canvas Logo" width="30" height="24"
+            class="d-inline-block align-text-top">
+          Webi Draw
+        </a>&nbps&nbps
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>&nbps&nbps
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/gall">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <h2>What are the Functions ?</h2>
+        <p>The draw function in the Webi Draw project empowers users to sketch and paint with precision and freedom, while the erase function allows for seamless removal of unwanted elements, facilitating seamless editing and refinement of digital artwork. Additionally, the translate feature enables effortless conversion of text across languages, fostering global communication and collaboration within the creative process.
+
+
+
+
+
+        </p></br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename='draw.png') }}" class="card-img-top" alt="Draw">
+              <div class="card-body">
+                <h5 class="card-title">Draw</h5>
+                <p class="card-text">The draw option in the Air Canvas project offers a diverse set of tools and customizable features, empowering users to create vibrant digital artwork with precision and ease, providing an intuitive platform for artists to unleash their creativity and produce stunning designs in just a few clicks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename='erase.png') }}" class="card-img-top" alt="Erase Mode">
+              <div class="card-body">
+                <h5 class="card-title">Erase Mode</h5>
+                <p class="card-text">Used to Erase the drawing on the ScreenBy using three fingers you can activate this action. The system has effectively recognized and outlined the presence and position of a human hand in "erase mode," ready to interact with a digital or virtual canvas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename='translate.png') }}" class="card-img-top" alt="Translate">
+              <div class="card-body">
+                <h5 class="card-title">Translate</h5>
+                <p class="card-text">The translate option in the Air Canvas project allows seamless conversion of text across languages, facilitating communication and collaboration globally with just a few clicks, offering a convenient and efficient tool for overcoming language barriers in creative projects.</p>
+              </div>
+            </div>
+          </div></br>
+        </div></br>
+        <h2>Various Colours Option</h2>
+        <p>The various colors option in the Air Canvas project provides a diverse palette of hues, shades, and tones, enabling artists to express their creativity with rich and vibrant color choices, offering endless possibilities for creating visually captivating digital artwork.</p></br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename='green.png') }}" class="card-img-top" alt="Easy to Use">
+              <div class="card-body">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename='blue.png') }}" class="card-img-top" alt="Customizable">
+              <div class="card-body">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename='red.png') }}" class="card-img-top" alt="Shareable">
+              <div class="card-body">
+               
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn
